@@ -1,0 +1,87 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/home/home",
+			"style": {
+				"navigationBarTitleText": "首页",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/navigator/navigator",
+			"style": {
+				"navigationBarTitleText": "导航",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/project/project",
+			"style": {
+				"navigationBarTitleText": "项目",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/message/message",
+			"style": {
+				"navigationBarTitleText": "消息",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/mine/mine",
+			"style": {
+				"navigationBarTitleText": "我的",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "uni-app"
+			}
+		}
+	],
+	"globalStyle": {
+		"pageOrientation": "portrait",
+		"navigationBarTitleText": "wanandroid-uni-app",
+		"navigationBarTextStyle": "white",
+		"navigationBarBackgroundColor": "#007AFF",
+		"backgroundColor": "#F8F8F8",
+		"backgroundColorTop": "#F4F5F6",
+		"backgroundColorBottom": "#F4F5F6"
+	},
+	"uniIdRouter": {},
+	"tabBar": {
+		"color": "#7A7E83",
+		"selectedColor": "#007AFF",
+		"borderStyle": "black",
+		"backgroundColor": "#F8F8F8",
+		"list": [{
+			"pagePath": "pages/home/home",
+			"iconPath": "static/ic_home.png",
+			"selectedIconPath": "static/ic_home_select.png",
+			"text": "首页"
+		}, {
+			"pagePath": "pages/navigator/navigator",
+			"iconPath": "static/ic_navigate.png",
+			"selectedIconPath": "static/ic_navigate_select.png",
+			"text": "导航"
+		}, {
+			"pagePath": "pages/project/project",
+			"iconPath": "static/ic_project.png",
+			"selectedIconPath": "static/ic_project_select.png",
+			"text": "项目"
+		}, {
+			"pagePath": "pages/message/message",
+			"iconPath": "static/ic_messag.png",
+			"selectedIconPath": "static/ic_message_select.png",
+			"text": "消息"
+		}, {
+			"pagePath": "pages/mine/mine",
+			"iconPath": "static/ic_mine.png",
+			"selectedIconPath": "static/ic_mine_select.png",
+			"text": "我的"
+		}]
+	}
+}
