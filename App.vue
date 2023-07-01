@@ -1,5 +1,11 @@
 <script>
 	export default {
+		globalData: {
+			// 用户信息，不要直接使用，从DataManager中获取
+			userInfo: null,
+			// 用户信息Cookie，不要直接使用，从DataManager中获取
+			cookie:null,
+		},
 		onLaunch: function() {
 			console.log('App Launch')
 		},

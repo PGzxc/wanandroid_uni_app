@@ -4,7 +4,7 @@
 
 * Windows 11 专业版
 * HBuilder X 3.8.4.20230531
-* Vue 3.x
+* Vue 2.x
 
 ## 二 组件及API
 
@@ -17,6 +17,10 @@
 * uni-ui ：https://ext.dcloud.net.cn/plugin?id=55
 * hello-uniapp 示例工程：https://ext.dcloud.net.cn/plugin?id=4941
 
+### 2.3 参考项目
+
+* https://github.com/zizikoth/UniApp_WanAndroid
+
 
 ## 二 版本
 
@@ -25,7 +29,12 @@
 * 项目框架+[底部tabBar][1]
 * 添加uni-ui依赖
 
+## v2.0
 
+* 首页-轮播图
+* 首页-文章列表
+* 点击-轮播图/文章列表，跳转倒webview显示详情
+* 上拉刷新、下拉加载更多文章列表
 
 
 
