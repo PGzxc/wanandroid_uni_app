@@ -68,6 +68,15 @@
             }
             
         }
+        ,{
+            "path" : "components/tree-group/tree-group",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
     ],
 	"globalStyle": {
 		"pageOrientation": "portrait",

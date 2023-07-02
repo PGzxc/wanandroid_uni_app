@@ -116,7 +116,6 @@ module.exports = {
 	getSystemAndNaviTree: () => {
 		return Promise.all([
 			get('tree/json'),
-			get('navi/json')
 		])
 	},
 	getSystemArticle: (cid, page) => {
