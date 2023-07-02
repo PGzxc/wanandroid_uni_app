@@ -41,6 +41,11 @@
 * 体系
 * 使用了uni-group和uni-tag
 
+### v4.0
+
+* 项目
+* scroll-view切换tab标签，点击标签显示文章列表
+
 
 
 [1]:https://uniapp.dcloud.net.cn/collocation/pages.html#tips-tabbar

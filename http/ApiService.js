@@ -21,7 +21,7 @@ const request = function(method, path, params, showLoading, checkError) {
 			method: method,
 			header: header,
 			url: router.baseURL + path,
-			params: params,
+			data: params,
 		}).then(res => {
 			let cookie = res.header["Set-Cookie"]
 			if (!utils.isEmpty(cookie)) {
