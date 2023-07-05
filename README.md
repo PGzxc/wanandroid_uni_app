@@ -1,5 +1,11 @@
 # wanandroid_uni_app
 
+**项目预览**
+
+|![][uni-az-1]| ![][uni-az-2]|![][uni-az-3] |![][uni-az-4]|
+| ----------- | ------------ | ------------ | ----------- |
+|![][uni-az-5]|![][uni-az-6] |![][uni-az-7] |![][uni-az-8]|
+
 ## 一 开发环境
 
 * Windows 11 专业版
@@ -90,3 +96,14 @@
 
 
 [1]:https://uniapp.dcloud.net.cn/collocation/pages.html#tips-tabbar
+
+<!--uni-app-wanandroid-->
+
+[uni-az-1]:https://cdn.staticaly.com/gh/PGzxc/CDN/master/blog-resume/uni-az-home-1.png
+[uni-az-2]:https://cdn.staticaly.com/gh/PGzxc/CDN/master/blog-resume/uni-az-navigator-2.png
+[uni-az-3]:https://cdn.staticaly.com/gh/PGzxc/CDN/master/blog-resume/uni-az-project-3.png
+[uni-az-4]:https://cdn.staticaly.com/gh/PGzxc/CDN/master/blog-resume/uni-az-article-web-4.png
+[uni-az-5]:https://cdn.staticaly.com/gh/PGzxc/CDN/master/blog-resume/uni-az-mine-login-no-5.png
+[uni-az-6]:https://cdn.staticaly.com/gh/PGzxc/CDN/master/blog-resume/uni-az-mine-login-yes-6.png
+[uni-az-7]:https://cdn.staticaly.com/gh/PGzxc/CDN/master/blog-resume/uni-az-user-login-7.png
+[uni-az-8]:https://cdn.staticaly.com/gh/PGzxc/CDN/master/blog-resume/uni-az-user-register-8.png
