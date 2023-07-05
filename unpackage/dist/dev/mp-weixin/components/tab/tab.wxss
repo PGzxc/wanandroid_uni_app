@@ -1,0 +1,52 @@
+
+.tabs {
+	flex: 1;
+	flex-direction: column;
+	overflow: hidden;
+	background-color: #ffffff;
+
+	height: 100vh;
+}
+.scroll-h {
+	width: 750rpx;
+
+
+
+	height: 80rpx;
+	flex-direction: row;
+
+	white-space: nowrap;
+
+	/* flex-wrap: nowrap; */
+	/* border-color: #cccccc;
+	border-bottom-style: solid;
+	border-bottom-width: 1px; */
+}
+.line-h {
+	height: 1rpx;
+	background-color: #cccccc;
+}
+.uni-tab-item {
+
+	display: inline-block;
+
+	flex-wrap: nowrap;
+	padding-left: 34rpx;
+	padding-right: 34rpx;
+}
+.uni-tab-item-title {
+	color: #555;
+	font-size: 30rpx;
+	height: 80rpx;
+	line-height: 80rpx;
+	flex-wrap: nowrap;
+
+	white-space: nowrap;
+}
+.uni-tab-item-title-active {
+	color: #007AFF;
+	text-decoration: underline; /*设置下划线 */
+	text-underline-offset:10rpx; /*下划线和文字间距		 */
+	/* text-decoration-color: red;//下划线颜色 */
+}
+

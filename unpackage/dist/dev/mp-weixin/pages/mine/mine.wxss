@@ -1,0 +1,65 @@
+
+.mine-head {
+	display: flex;
+	flex-direction: column;
+	padding: 20rpx;
+}
+.mine-head-user {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+.mine-head-user-head {
+	text-align: left;
+}
+.mine-head-user-right {
+	text-align: right;
+}
+.mine-head-user text {
+	flex-grow: 1;
+}
+.mine-head-info {
+	display: flex;
+	flex-direction: row;
+}
+.mine-head-info>view {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 10rpx;
+}
+.mine-head-info>view>view:first-child {
+	font-style: normal;
+	font-size: 30rpx;
+	-webkit-text-decoration: black;
+	        text-decoration: black;
+	font-weight: bold;
+}
+
+
+.mine-function-page {
+	display: flex;
+	flex-direction: column;
+}
+.mine-function-page>text {
+	color: #007AFF;
+	text-decoration: underline; /*设置下划线 */
+	text-underline-offset: 10rpx; /*下划线和文字间距		 */
+	margin: 20rpx;
+	font-weight: bold;
+	font-size: 36rpx;
+	color: black;
+}
+.grid-item-box {
+	flex: 1;
+	/* position: relative; */
+
+	display: flex;
+
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 15px 0;
+}
+

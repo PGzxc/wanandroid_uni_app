@@ -1,0 +1,22 @@
+
+.uni-common-mt {
+	margin-top: 30px;
+}
+.uni-padding-wrap {
+	/* width: 750rpx; */
+	padding: 0px 30px;
+}
+.content {
+
+	display: flex;
+
+	justify-content: center;
+	align-items: center;
+	height: 150px;
+	text-align: center;
+}
+.content-text {
+	font-size: 14px;
+	color: #666;
+}
+

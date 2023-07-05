@@ -21,8 +21,25 @@
 
 * https://github.com/zizikoth/UniApp_WanAndroid
 
+## 三 网络访问问题(接口API)
 
-## 三 版本
+### 3.1 跨域问题
+
+* 使用插件：Allow CORS:Access-Control-Allow-Origin(安装后点击On)，但是访问自动缓存cookie时会有问题
+* 在manifest.josn文件中的源码视图中配置devServer代理，接口访问及cookie缓存都可以解决
+
+### 3.2 cookie问题
+
+* 小程序端不支持自动保持 cookie，通过登录接口保存cookie的方法不可取
+* 使用第三方网络工具：luch-request设置自动保存cookie
+
+### 3.3 网络访问工具变更
+
+* 之前：uni-request
+* 现在：luch-request
+
+
+## 四 版本
 
 ### v1.0
 
@@ -45,6 +62,30 @@
 
 * 项目
 * scroll-view切换tab标签，点击标签显示文章列表
+
+### v5.0
+
+* 消息-选项卡
+* 我的
+* 登录、注册页面
+
+## 五 项目实现
+
+### 5.1 已完成接口
+
+* login：登录
+* register：注册
+* homeBanner：首页轮播图
+* homeArticles：首页文章列表
+* getProjectTree：项目
+* getSystemAndNaviTree：导航
+* getCoinInfo：用户信息
+
+### 5.2 未完成
+
+
+
+
 
 
 

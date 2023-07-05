@@ -32,7 +32,6 @@
 				this.position = e.detail.current
 			},
 			itemClick(item) {
-				console.log(item)
 				utils.openLink(item.id, item.title, item.link)
 			}
 		}

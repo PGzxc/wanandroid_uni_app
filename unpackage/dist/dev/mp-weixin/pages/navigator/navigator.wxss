@@ -1,0 +1,14 @@
+
+.wrap-container {
+	display: flex;
+	flex-direction: row;
+	width: calc(100% - 30rpx);
+	margin: 15rpx;
+	flex-wrap: wrap;
+}
+.wrap-item {
+	display: flex;
+	color: #666666;
+	margin: 15rpx;
+}
+

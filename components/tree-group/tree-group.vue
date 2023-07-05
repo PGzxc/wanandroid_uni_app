@@ -1,12 +1,13 @@
 <template>
 	<view>
-		<view v-for="(item,index) in data" :key="index">
+		<view v-for="(item,itemindex) in data" :key="itemindex">
 			<!--group-title-->
 			<uni-group :title="item.title" margin-top="20">
 				<!--group-content-->
 				<view class="wrap-container">
-					<view v-for="(childitem,index) in item.children" :key="index" @click="itemClick(childitem)">
-						<uni-tag :key="index" :inverted="true" :text="childitem.title" type="primary"
+					<view v-for="(childitem,childindex) in item.children" :key="childindex"
+						@click="itemClick(childitem)">
+						<uni-tag :key="childindex" :inverted="true" :text="childitem.title" type="primary"
 							class="wrap-item" />
 					</view>
 				</view>

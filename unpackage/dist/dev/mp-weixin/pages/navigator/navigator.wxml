@@ -1,0 +1,1 @@
+<view><tree-group vue-id="57b9c590-1" data="{{systemTree}}" data-com-type="wx" bind:__l="__l"></tree-group></view>

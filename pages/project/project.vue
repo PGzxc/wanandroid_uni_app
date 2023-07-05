@@ -1,6 +1,6 @@
 <template>
-	<view class="page">
-		<tab ref="tab" @tabChange="onTabChange"/>
+	<view>
+		<tab ref="tab" @tabChange="onTabChange" />
 		<article-list ref="articleList" />
 	</view>
 </template>
@@ -64,4 +64,3 @@
 
 <style>
 </style>
-

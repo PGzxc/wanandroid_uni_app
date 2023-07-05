@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "导航",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "tree-group": "/components/tree-group/tree-group"
+  }
+}

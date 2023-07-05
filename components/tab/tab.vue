@@ -17,8 +17,7 @@
 			return {
 				tabs: [],
 				tabIndex: 0,
-				scrollInto: "",
-				bold: true
+				scrollInto: ""
 			};
 		},
 		methods: {
@@ -26,11 +25,11 @@
 				this.tabs = tabs
 				this.tabIndex = index
 			},
-			change(index) {
-				this.tabIndex = index
-				this.scrollInto = this.tabs[index].name;
-				this.$emit("tabChange", this.tabs[index].id)
-			},
+			// change(index) {
+			// 	this.tabIndex = index
+			// 	//this.scrollInto = this.tabs[index].name;
+			// 	this.$emit("tabChange", this.tabs[index].id)
+			// },
 			ontabtap(index) {
 				this.tabIndex = index
 				//this.scrollInto = this.tabs[index].name;
@@ -95,7 +94,7 @@
 	.uni-tab-item-title-active {
 		color: #007AFF;
 		text-decoration: underline; //设置下划线
-		text-underline-offset:10rpx; //下划线和文字间距		
+		text-underline-offset: 10rpx; //下划线和文字间距		
 		/* text-decoration-color: red;//下划线颜色 */
 	}
 </style>

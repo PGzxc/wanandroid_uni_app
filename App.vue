@@ -1,4 +1,5 @@
 <script>
+	
 	export default {
 		globalData: {
 			// 用户信息，不要直接使用，从DataManager中获取

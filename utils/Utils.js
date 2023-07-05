@@ -44,7 +44,23 @@ const pageScrollToTop = function() {
 		duration: 200
 	})
 }
+// 是否已经登录
+const isLogined = function(toLogin = true) {
+	let isUserInfoExit = !isEmpty(dataManager.getUser())
+	let isCookieExit = !isEmpty(dataManager.getCookie())
+	let login = isUserInfoExit && isCookieExit
 
+	// #ifndef MP-WEIXIN
+	login = isUserInfoExit
+	// #endif
+
+	// if (!login && toLogin) {
+	// 	uni.navigateTo({
+	// 		url: '/pages/mine/login/login'
+	// 	})
+	// }
+	return login
+}
 // 跳转文章页面
 const openLink = function(id, title, link) {
 	if (!isEmpty(link)) {
@@ -109,5 +125,6 @@ module.exports = {
 	toast,
 	nowDate,
 	pageScrollToTop,
-	openLink
+	openLink,
+	isLogined
 }

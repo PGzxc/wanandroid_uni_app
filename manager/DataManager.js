@@ -1,13 +1,13 @@
 const globalData = getApp().globalData
 
 // 存储用户信息
-const saveUser = function (user) {
+const saveUser = function(user) {
 	globalData.userInfo = user
 	uni.setStorageSync('Core_User', user)
 }
 
 // 获取用户信息
-const getUser = function () {
+const getUser = function() {
 	if (globalData.userInfo != null && globalData.userInfo != undefined) {
 		return globalData.userInfo
 	} else {
@@ -15,14 +15,22 @@ const getUser = function () {
 		return globalData.userInfo
 	}
 }
+//用户是否登录
+const isLogin = function() {
+	if (getUser() != null && getUser() != undefined) {
+		return true
+	} else {
+		return false
+	}
+}
 
 // 存储用户登录Cookie
-const saveCookie = function (cookie) {
+const saveCookie = function(cookie) {
 	globalData.cookie = cookie
 	uni.setStorageSync('Core_Cookie', cookie)
 }
 // 获取用户登录Cookie
-const getCookie = function () {
+const getCookie = function() {
 	if (globalData.cookie != null && globalData.cookie != undefined) {
 		return globalData.cookie
 	} else {
@@ -31,19 +39,19 @@ const getCookie = function () {
 	}
 }
 
-const isCollected = function (id) {
+const isCollected = function(id) {
 	let index = getUser().collectIds.indexOf(Number(id))
 	return index != -1
 }
 
-const addCollection = function (id) {
+const addCollection = function(id) {
 	if (!isCollected(id)) {
 		getUser().collectIds.push(Number(id))
 		saveUser(getUser())
 	}
 }
 
-const removeCollection = function (id) {
+const removeCollection = function(id) {
 	let index = getUser().collectIds.indexOf(Number(id))
 	if (index != -1) {
 		getUser().collectIds.splice(index, 1)
@@ -51,7 +59,7 @@ const removeCollection = function (id) {
 	}
 }
 
-const clear = function () {
+const clear = function() {
 	try {
 		globalData.userInfo = null
 		globalData.cookie = null
@@ -64,6 +72,7 @@ const clear = function () {
 module.exports = {
 	saveUser,
 	getUser,
+	isLogin,
 	saveCookie,
 	getCookie,
 	isCollected,
@@ -71,25 +80,3 @@ module.exports = {
 	removeCollection,
 	clear
 }
-
-// export default class DataManager{
-// 		saveUser,
-// 		getUser,
-// 		saveCookie,
-// 		getCookie,
-// 		isCollected,
-// 		addCollection,
-// 		removeCollection,
-// 		clear
-// }
-
-// export default {
-// 	saveUser,
-// 	getUser,
-// 	saveCookie,
-// 	getCookie,
-// 	isCollected,
-// 	addCollection,
-// 	removeCollection,
-// 	clear
-// }

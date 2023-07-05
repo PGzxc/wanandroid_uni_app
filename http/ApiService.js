@@ -1,7 +1,18 @@
-import  utils from '@/utils/Utils.js'
-import  dataManager from '@/manager/DataManager.js'
-import  router from '@/http/Router.js'
+import Request from 'luch-request'
+import utils from '@/utils/Utils.js'
+import dataManager from '@/manager/DataManager.js'
+import router from '@/http/Router.js'
 
+
+const http = new Request({
+	// #ifdef H5
+	baseURL: 'api/',
+	// #endif
+	// #ifndef H5
+	baseURL: 'https://www.wanandroid.com/',
+	// #endif
+
+})
 
 const request = function(method, path, params, showLoading, checkError) {
 	if (showLoading) {
@@ -15,14 +26,15 @@ const request = function(method, path, params, showLoading, checkError) {
 			'cookie': dataManager.getCookie()
 		}
 	}
-
 	return new Promise((resolve, reject) => {
-		uni.request({
+		http.request({
 			method: method,
 			header: header,
-			url: router.baseURL + path,
-			data: params,
+			url: path,
+			params: params,
+			withCredentials: true,
 		}).then(res => {
+			console.log('request success', res);
 			let cookie = res.header["Set-Cookie"]
 			if (!utils.isEmpty(cookie)) {
 				dataManager.saveCookie(cookie)
@@ -98,7 +110,7 @@ module.exports = {
 	},
 	getHomeData: () => {
 		return Promise.all([
-			get(router.homeBanner), 
+			get(router.homeBanner),
 			get(router.homeArticles)
 		])
 	},
@@ -122,6 +134,12 @@ module.exports = {
 		return get(`article/list/${page}/json`, {
 			cid: cid
 		})
+	},
+	getCoinInfo: () => {
+		return Promise.all([
+			getNoCheck('lg/collect/list/0/json'),
+			getNoCheck('lg/coin/userinfo/json')
+		])
 	},
 	coinRank: (page) => {
 		return get(`coin/rank/${page}/json`)
