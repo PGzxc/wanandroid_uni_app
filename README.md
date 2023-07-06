@@ -2,9 +2,10 @@
 
 **项目预览**
 
-|![][uni-az-1]| ![][uni-az-2]|![][uni-az-3] |![][uni-az-4]|
-| ----------- | ------------ | ------------ | ----------- |
-|![][uni-az-5]|![][uni-az-6] |![][uni-az-7] |![][uni-az-8]|
+| ![][uni-az-1] | ![][uni-az-2] | ![][uni-az-3] | ![][uni-az-4] |
+| ------------- | ------------- | ------------- | ------------- |
+| ![][uni-az-5] | ![][uni-az-6] | ![][uni-az-7] | ![][uni-az-8] |
+| ![][uni-az-9] | ![][uni-az-10]|               |               |
 
 ## 一 开发环境
 
@@ -111,3 +112,5 @@
 [uni-az-6]:https://cdn.staticaly.com/gh/PGzxc/CDN/master/blog-resume/uni-az-mine-login-yes-6.png
 [uni-az-7]:https://cdn.staticaly.com/gh/PGzxc/CDN/master/blog-resume/uni-az-user-login-7.png
 [uni-az-8]:https://cdn.staticaly.com/gh/PGzxc/CDN/master/blog-resume/uni-az-user-register-8.png
+[uni-az-9]:https://cdn.staticaly.com/gh/PGzxc/CDN/master/blog-resume/uni-az-msg-read-9.png
+[uni-az-10]:https://cdn.staticaly.com/gh/PGzxc/CDN/master/blog-resume/uni-az-msg-unread-10.png
