@@ -75,6 +75,10 @@
 * 我的
 * 登录、注册页面
 
+### v6.0
+
+* 消息
+
 ## 五 项目实现
 
 ### 5.1 已完成接口
@@ -86,10 +90,10 @@
 * getProjectTree：项目
 * getSystemAndNaviTree：导航
 * getCoinInfo：用户信息
+* getMessageRead：已读消息
+* getMessageUnRead：未读消息
 
 ### 5.2 未完成
-
-
 
 
 

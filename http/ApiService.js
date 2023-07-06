@@ -144,4 +144,11 @@ module.exports = {
 	coinRank: (page) => {
 		return get(`coin/rank/${page}/json`)
 	},
+	getMessageRead: (page) => {
+		return get(`message/lg/readed_list/${page}/json`)
+	},
+	getMessageUnRead: (page) => {
+		return get(`message/lg/unread_list/${page}/json`)
+	}
+
 }

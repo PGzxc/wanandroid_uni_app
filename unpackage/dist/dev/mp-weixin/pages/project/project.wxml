@@ -1,1 +1,1 @@
-<view class="page"><tab class="vue-ref" bind:tabChange="__e" vue-id="3b2ec1e8-1" data-ref="tab" data-event-opts="{{[['^tabChange',[['onTabChange']]]]}}" bind:__l="__l"></tab><article-list class="vue-ref" vue-id="3b2ec1e8-2" data-ref="articleList" bind:__l="__l"></article-list></view>
+<view><tab class="vue-ref" bind:tabChange="__e" vue-id="3b2ec1e8-1" data-ref="tab" data-event-opts="{{[['^tabChange',[['onTabChange']]]]}}" bind:__l="__l"></tab><article-list class="vue-ref" vue-id="3b2ec1e8-2" data-ref="articleList" bind:__l="__l"></article-list></view>

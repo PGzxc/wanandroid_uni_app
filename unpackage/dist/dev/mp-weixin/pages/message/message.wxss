@@ -1,9 +1,37 @@
 
+.page {
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	margin: auto;
+	overflow: scroll;
+	line-height: 32px;
+}
+.tab-box {
+	display: flex;
+	height: 150rpx;
+	width: 100vw;
+	background: #ffffff;
+	align-items: center;
+	justify-content: center;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0px;
+}
+.tab-container {
+	width: 500rpx;
+	height: 100%;
+	height: 74rpx;
+	align-self: center;
+	border-radius: 10rpx;
+	border: solid #000000 1rpx;
+}
 .uni-common-mt {
-	margin-top: 30px;
+	margin-top: 10rpx;
+	margin-bottom: 10rpx;
 }
 .uni-padding-wrap {
-	/* width: 750rpx; */
+	width: 750rpx;
 	padding: 0px 30px;
 }
 .content {
